@@ -13,8 +13,8 @@ import Teams from "./Components/Teams/Teams";
 
 const Home = () => {
   let herodata = [
-    { text1: "dive into", text2: "Formula 1 World" },
-    { text1: "Where Speed", text2: "Becomes art" },
+    { text1: "Dive Into", text2: "Formula 1 World" },
+    { text1: "Where Speed", text2: "Becomes Art" },
     { text1: "Maximum Speed", text2: "Maximum Thrill" },
   ];
 
