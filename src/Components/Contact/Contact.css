@@ -1,0 +1,236 @@
+.contact-container {
+  min-height: 100vh;
+  background-image: url('/src/assets/f1-background.jpg'); /* Update this path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+}
+
+.contact-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  z-index: 1;
+  color: white;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #ff2800;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  color: #ff2800;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ff2800;
+  padding-bottom: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.contact-item:hover {
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 0.3rem;
+  color: #ff2800;
+}
+
+.contact-item h3 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.contact-item p {
+  color: #ccc;
+  margin: 0.2rem 0;
+}
+
+.social-links {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #444;
+}
+
+.social-links h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  background: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  background: #ff2800;
+  transform: translateY(-3px);
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.contact-form h2 {
+  color: #ff2800;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(30, 30, 30, 0.8);
+  color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff2800;
+  box-shadow: 0 0 0 2px rgba(255, 40, 0, 0.3);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+}
+
+.submit-btn {
+  background-color: #ff2800;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background-color: #e52200;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
